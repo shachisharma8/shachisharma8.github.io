@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FCFAF5"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#795744" stroke-width="2" opacity="0.4"/>
+  <text x="90" y="250" font-family="Georgia, serif" font-size="96" fill="#302F2B">A life in progress.</text>
+  <text x="94" y="320" font-family="Georgia, serif" font-size="34" fill="#77746D">Part software engineer, part collector of places, stories,</text>
+  <text x="94" y="366" font-family="Georgia, serif" font-size="34" fill="#77746D">books, and little moments.</text>
+  <text x="94" y="540" font-family="Georgia, serif" font-size="30" fill="#456A83">Shachi Sharma — Person &amp; Profession</text>
+  <g transform="translate(980,470)">
+    <path d="M0 60 L40 0 L80 60" fill="none" stroke="#456A83" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

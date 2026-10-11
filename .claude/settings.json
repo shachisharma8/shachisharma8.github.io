@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test)",
+      "Bash(npm test *)",
+      "Bash(npm run build)",
+      "WebFetch(domain:mijobello.com)",
+      "Bash(node scripts/fetch-images.mjs)",
+      "Bash(curl -s -o /dev/null -w \"home       %{http_code}\\\\n\" http://localhost:5173/)",
+      "Bash(curl -s -o /dev/null -w \"image      %{http_code}\\\\n\" http://localhost:5173/images/hero/alps.jpg)",
+      "Bash(curl -s -o /dev/null -w \"profession %{http_code}\\\\n\" http://localhost:5173/profession)",
+      "Bash(curl -s -o /dev/null -w \"library    %{http_code}\\\\n\" http://localhost:5173/person/library)",
+      "WebFetch(domain:www.coursera.org)",
+      "Bash(curl -s http://localhost:4173/robots.txt)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:4173/resume/Shachi_Sharma_2026.pdf\")",
+      "Bash(curl -s -I \"http://localhost:4173/resume/Shachi_Sharma_2026.pdf\")",
+      "Bash(curl -s \"http://localhost:4173/resume/Shachi_Sharma_2026.pdf\")",
+      "Bash(git init *)",
+      "Bash(git branch *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m ' *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Shachi\\.claude\\projects\\c--Users-Shachi-PersonalProjects-PersonalWebsite\\memory"
+    ]
+  }
+}

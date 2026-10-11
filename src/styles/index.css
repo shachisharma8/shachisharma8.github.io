@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --grain-opacity: 0.035;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink;
+    text-wrap: balance;
+  }
+
+  /* Visible, consistent focus ring for keyboard users */
+  :focus-visible {
+    outline: 2px solid #3f6076;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: #a9c6dd;
+    color: #2b2a26;
+  }
+}
+
+@layer components {
+  /* Paper-like surface with a faint grain overlay */
+  .paper-grain {
+    position: relative;
+  }
+  .paper-grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  /* Film-frame border used around images */
+  .film-frame {
+    @apply bg-paper p-2 shadow-frame;
+    border: 1px solid rgba(48, 47, 43, 0.08);
+  }
+
+  /* Editorial eyebrow label */
+  .eyebrow {
+    @apply font-sans text-xs uppercase tracking-[0.22em] text-muted;
+  }
+
+  /* Underline link that draws on hover */
+  .link-underline {
+    @apply relative inline-block text-blue-deep no-underline;
+  }
+  .link-underline::after {
+    content: '';
+    @apply absolute left-0 -bottom-0.5 h-px w-full origin-left scale-x-0 bg-blue-deep transition-transform duration-300 ease-editorial;
+  }
+  .link-underline:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Primary pill button */
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-sans text-sm font-medium transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply bg-walnut text-paper hover:bg-[#634233];
+  }
+  .btn-ghost {
+    @apply border border-ink/15 bg-transparent text-ink hover:bg-ink/[0.04];
+  }
+
+  .container-editorial {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  /* Sample-content tag */
+  .sample-tag {
+    @apply inline-flex items-center gap-1 rounded-full bg-sage/25 px-2 py-0.5 font-sans text-[10px] font-medium uppercase tracking-wider text-[#55614f];
+  }
+
+  /* Powder-blue polka dots — the reference motif. Sits on a chocolate surface. */
+  .polka {
+    background-color: #3f271d;
+    background-image: radial-gradient(circle, #a9c6dd 24%, transparent 25%);
+    background-size: 56px 56px;
+    background-position: 0 0;
+  }
+  .polka-soft {
+    background-image: radial-gradient(circle, rgba(169, 198, 221, 0.16) 24%, transparent 25%);
+    background-size: 44px 44px;
+  }
+}

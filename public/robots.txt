@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Keep the résumé folder out of search indexes (it is not hosted publicly,
+# but this is belt-and-suspenders in case a file is ever added there).
+Disallow: /resume/
