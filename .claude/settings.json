@@ -19,7 +19,8 @@
       "Bash(git branch *)",
       "Bash(git config *)",
       "Bash(git add *)",
-      "Bash(git commit -q -m ' *)"
+      "Bash(git commit -q -m ' *)",
+      "Bash(gh repo *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Shachi\\.claude\\projects\\c--Users-Shachi-PersonalProjects-PersonalWebsite\\memory"

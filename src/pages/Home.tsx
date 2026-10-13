@@ -71,16 +71,19 @@ export function Home() {
                 {...fade(0.1)}
                 className="font-serif text-[clamp(2.3rem,5.5vw,4.25rem)] font-medium leading-[1.02] tracking-tight"
               >
-                The quiet machinery <span className="italic text-blue-deep">behind payments.</span>
+                High-throughput payment systems, <span className="italic text-blue-deep">built to scale.</span>
               </motion.h2>
               <motion.p {...fade(0.16)} className="mt-6 max-w-reading text-lg text-muted">
-                I spend my days building the services that move money correctly, on time, and without
-                drama — even with millions of events in flight. Five years of it, mostly in Java,
-                Spring, and distributed-systems thinking.
+                I design and build the backend services that create, process, and settle
+                high-volume payments — reliably, accurately, and on time, even at a scale of
+                millions of events. Over the past five years I’ve done this primarily in Java and
+                Spring, applying distributed-systems principles to mission-critical financial
+                workflows.
               </motion.p>
               <motion.p {...fade(0.2)} className="mt-4 max-w-reading text-ink/80">
-                Lately I’ve been teaching that same machinery to lean on AI where it genuinely helps,
-                and to ask for a human when it doesn’t.
+                More recently, I’ve focused on applying AI within these systems where it delivers
+                measurable value — automating well-defined work while escalating anything uncertain
+                to human review.
               </motion.p>
 
               <motion.div {...fade(0.26)} className="mt-9 flex flex-wrap gap-3">
