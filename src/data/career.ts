@@ -103,11 +103,4 @@ export const education: EducationEntry[] = [
     start: 'Jul 2017',
     end: 'Jun 2021',
   },
-  {
-    id: 'auckland-house',
-    institution: 'Auckland House School, Shimla',
-    credential: 'I.C.S.E. (Class X) · I.S.C. (Class XII)',
-    start: '2002',
-    end: '2017',
-  },
 ];

@@ -71,7 +71,7 @@ export function Home() {
                 {...fade(0.1)}
                 className="font-serif text-[clamp(2.3rem,5.5vw,4.25rem)] font-medium leading-[1.02] tracking-tight"
               >
-                High-throughput payment systems, <span className="italic text-blue-deep">built to scale.</span>
+                High-throughput systems, <span className="italic text-blue-deep">built to scale.</span>
               </motion.h2>
               <motion.p {...fade(0.16)} className="mt-6 max-w-reading text-lg text-muted">
                 I design and build the backend services that create, process, and settle
